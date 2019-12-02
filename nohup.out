@@ -1,0 +1,149 @@
+Listening on Port 3000
+[0mGET / [32m200 [0m11.661 ms - 37[0m
+Listening on Port 3000
+Listening on Port 3000
+{ intent: 
+   { id: '5d29f4aeffa748000100365d',
+     name: '01처음시작하기',
+     extra: { reason: [Object] } },
+  userRequest: 
+   { timezone: 'Asia/Seoul',
+     params: { surface: 'Kakaotalk.plusfriend' },
+     block: { id: '5d29f4aeffa748000100365d', name: '01처음시작하기' },
+     utterance: '시작하기',
+     lang: 'kr',
+     user: 
+      { id: '4c46f1ce4e87c1db8a50d3c0d5fb51a6cd2c669b2dddf38f46d9d05e9b2dd27007',
+        type: 'botUserKey',
+        properties: [Object] } },
+  contexts: [],
+  bot: { id: '5d280718ffa74800012d30f5!', name: 'Goodplace' },
+  action: 
+   { name: 'welcome',
+     clientExtra: null,
+     params: {},
+     id: '5d2d7c2a92690d000173c1ed',
+     detailParams: {} } }
+[ RowDataPacket {
+    id: 225,
+    kakaoId: '4c46f1ce4e87c1db8a50d3c0d5fb51a6cd2c669b2dddf38f46d9d05e9b2dd27007',
+    name: '허남준',
+    accessToken: 'fa799ea1-62b1-4154-b094-1b81596eefa0',
+    useseqnum: '1100751554',
+    score: 70,
+    fintechnum: '199005178057726137767815',
+    money: 20000000 } ]
+[0mPOST /api/welcome [32m200 [0m20.444 ms - 651[0m
+{ intent: 
+   { id: '5d29f4aeffa748000100365d',
+     name: '01처음시작하기',
+     extra: { reason: [Object] } },
+  userRequest: 
+   { timezone: 'Asia/Seoul',
+     params: { surface: 'Kakaotalk.plusfriend' },
+     block: { id: '5d29f4aeffa748000100365d', name: '01처음시작하기' },
+     utterance: '시작하기',
+     lang: 'kr',
+     user: 
+      { id: '4c46f1ce4e87c1db8a50d3c0d5fb51a6cd2c669b2dddf38f46d9d05e9b2dd27007',
+        type: 'botUserKey',
+        properties: [Object] } },
+  contexts: [],
+  bot: { id: '5d280718ffa74800012d30f5!', name: 'Goodplace' },
+  action: 
+   { name: 'welcome',
+     clientExtra: null,
+     params: {},
+     id: '5d2d7c2a92690d000173c1ed',
+     detailParams: {} } }
+[ RowDataPacket {
+    id: 225,
+    kakaoId: '4c46f1ce4e87c1db8a50d3c0d5fb51a6cd2c669b2dddf38f46d9d05e9b2dd27007',
+    name: '허남준',
+    accessToken: 'fa799ea1-62b1-4154-b094-1b81596eefa0',
+    useseqnum: '1100751554',
+    score: 70,
+    fintechnum: '199005178057726137767815',
+    money: 20000000 } ]
+[0mPOST /api/welcome [32m200 [0m2.799 ms - 651[0m
+{ intent: 
+   { id: '5d29f4aeffa748000100365d',
+     name: '01처음시작하기',
+     extra: { reason: [Object] } },
+  userRequest: 
+   { timezone: 'Asia/Seoul',
+     params: { surface: 'Kakaotalk.plusfriend' },
+     block: { id: '5d29f4aeffa748000100365d', name: '01처음시작하기' },
+     utterance: '시작하기',
+     lang: 'kr',
+     user: 
+      { id: '4c46f1ce4e87c1db8a50d3c0d5fb51a6cd2c669b2dddf38f46d9d05e9b2dd27007',
+        type: 'botUserKey',
+        properties: [Object] } },
+  contexts: [],
+  bot: { id: '5d280718ffa74800012d30f5!', name: 'Goodplace' },
+  action: 
+   { name: 'welcome',
+     clientExtra: null,
+     params: {},
+     id: '5d2d7c2a92690d000173c1ed',
+     detailParams: {} } }
+[ RowDataPacket {
+    id: 225,
+    kakaoId: '4c46f1ce4e87c1db8a50d3c0d5fb51a6cd2c669b2dddf38f46d9d05e9b2dd27007',
+    name: '허남준',
+    accessToken: 'fa799ea1-62b1-4154-b094-1b81596eefa0',
+    useseqnum: '1100751554',
+    score: 70,
+    fintechnum: '199005178057726137767815',
+    money: 20000000 } ]
+[0mPOST /api/welcome [32m200 [0m1.867 ms - 651[0m
+{ intent: 
+   { id: '5d29f4aeffa748000100365d',
+     name: '01처음시작하기',
+     extra: { reason: [Object] } },
+  userRequest: 
+   { timezone: 'Asia/Seoul',
+     params: { surface: 'Kakaotalk.plusfriend' },
+     block: { id: '5d29f4aeffa748000100365d', name: '01처음시작하기' },
+     utterance: '시작하기',
+     lang: 'kr',
+     user: 
+      { id: '4c46f1ce4e87c1db8a50d3c0d5fb51a6cd2c669b2dddf38f46d9d05e9b2dd27007',
+        type: 'botUserKey',
+        properties: [Object] } },
+  contexts: [],
+  bot: { id: '5d280718ffa74800012d30f5!', name: 'Goodplace' },
+  action: 
+   { name: 'welcome',
+     clientExtra: null,
+     params: {},
+     id: '5d2d7c2a92690d000173c1ed',
+     detailParams: {} } }
+[ RowDataPacket {
+    id: 225,
+    kakaoId: '4c46f1ce4e87c1db8a50d3c0d5fb51a6cd2c669b2dddf38f46d9d05e9b2dd27007',
+    name: '허남준',
+    accessToken: 'fa799ea1-62b1-4154-b094-1b81596eefa0',
+    useseqnum: '1100751554',
+    score: 70,
+    fintechnum: '199005178057726137767815',
+    money: 20000000 } ]
+[0mPOST /api/welcome [32m200 [0m1.724 ms - 651[0m
+[0mGET /api/enroll?id=aa6baed6b42223d951b703bdc48e9e6510be29ca080171f4e89a9a0ea3ca10d165 [32m200 [0m6.745 ms - 4174[0m
+{ accessToken: '',
+  useseqnum: '',
+  kakaoId: 'aa6baed6b42223d951b703bdc48e9e6510be29ca080171f4e89a9a0ea3ca10d165' }
+ 
+계좌인증부터하시라!
+[0mPOST /join [32m200 [0m2.542 ms - 2[0m
+[0mGET /api/enroll?id=aa6baed6b42223d951b703bdc48e9e6510be29ca080171f4e89a9a0ea3ca10d165 [32m200 [0m1.259 ms - 4174[0m
+{ accessToken: '',
+  useseqnum: '',
+  kakaoId: 'aa6baed6b42223d951b703bdc48e9e6510be29ca080171f4e89a9a0ea3ca10d165' }
+ 
+계좌인증부터하시라!
+[0mPOST /join [32m200 [0m1.319 ms - 2[0m
+[0mGET /api/enroll?id=c744d3e13cf732485814e42d0993184ee7fecbb7c3dbc9b0268aa017be9df71d1d [32m200 [0m0.764 ms - 4174[0m
+[0mGET /favicon.ico [33m404 [0m3.167 ms - 150[0m
+[0mGET /api/enroll?id=aa6baed6b42223d951b703bdc48e9e6510be29ca080171f4e89a9a0ea3ca10d165 [32m200 [0m1.627 ms - 4174[0m

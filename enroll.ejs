@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+
+<style>
+        #authBtn{
+            border-top-left-radius: 9px;
+            border-bottom-left-radius: 9px; 
+            border-top-right-radius: 9px;
+            border-bottom-right-radius: 9px; 
+            margin-right:15px;
+            border: 5px solid rgb(90, 90, 90);
+        }
+        #joinBtn{
+            border-top-left-radius: 9px;
+            border-bottom-left-radius: 9px; 
+            border-top-right-radius: 9px;
+            border-bottom-right-radius: 9px;    
+            margin-left:5px;
+            border: 5px solid rgb(90, 90, 90);
+        }
+        #btn_group button{
+            
+            background-color: rgb(51, 51, 51);
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+            margin: 0 auto;
+        }
+    </style>
+<title>계좌 인증 페이지</title> 
+
+</head>
+<body>
+        <input type="hidden" id="kakaoId" >
+        <input type="hidden" id="accessToken" >
+        <input type="hidden" id="useseqnum" >        
+       
+        <img src="https://i.imgur.com/iGdhP6d.jpg" style="max-width:100%; height:auto;">
+        
+        <div id="btn_group">
+        <button id="authBtn">계좌인증</button>
+        <button id="joinBtn">등록완료</button>
+        </div>
+
+        <span id="msg" style="font-size: 100px; visibility: hidden">계좌인증 후 등록부탁드립니다.</span>
+        
+        
+<script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+
+
+<script>
+    function CloseWindow(){
+                    self.opener = self;
+                    window.close();
+                }
+    
+    $(document).ready(function() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var kakaoId = urlParams.get('id');
+        console.log(kakaoId);
+        $('#kakaoId').val(kakaoId);
+    });
+    
+    
+    $('#Btn').click(function(){
+    
+    var client_id = "l7xx533bb156ace64c6eb6e19b2db4583e76";
+    var redirect_uri = "http://13.124.84.213/api/callback"; 
+    var scope = "login inquiry transfer";
+    var response_type = "JSON";
+    var qs =
+    "?response_type=code&"
+    + "client_id="+client_id+"&"
+    + "redirect_uri=" + redirect_uri + "&"
+    + "scope="+scope+"&"
+    + "auth_type=0&"
+    + "invoke_type=ajax"
+    console.log(qs);
+    $.ajax({        
+        url:'https://testapi.open-platform.or.kr/oauth/2.0/authorize2' + qs,
+        type : 'GET',
+            success:function(data){
+                window.name ="parents";
+                console.log(data);
+                console.log(data.location);
+                var tmpwindow = window.open("about:blank");
+                tmpwindow.location = data.location;//추가
+                
+            })
+        })
+    })
+    $("#joinBtn").click(function(){
+        $.ajax({
+            url:'http://13.124.84.213/join',
+            type : 'POST',
+            data : {
+                
+                accessToken : $("#accessToken").val(),
+                useseqnum : $("#useseqnum").val(),
+                kakaoId : $("#kakaoId").val(),
+            },
+            success:function(data){
+                if(data == "-1"){
+                    $("#msg").text("계좌인증 후 등록부탁드립니다.");
+                    $("#msg").attr('style', 'visibility:visible; font-size: 25px');
+                    
+                }else{
+                    $("#msg").text("계좌인증 완료되었습니다 뒤로 돌아가주세요!.");
+                    $("#msg").attr('style', 'visibility:visible; font-size: 18px');
+                }
+                //CloseWindow();
+            }
+        })
+        
+    });
+</script>
+</body>
+</html>
+
